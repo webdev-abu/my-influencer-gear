@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+/*  shared style */
+
+/* header style */
+.navbar , .banner, .brand-logo{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+.brand span{
+    color: #E02C6D;
+}
+.navbar .nav-links{
+    display: flex;
+}
+.navbar .nav-item{
+    list-style: none;
+    transform: rotate(0deg);
+    transition: all 0.9s ease-in-out;
+}
+.navbar .nav-item .nav-link{
+    padding: 0 1.2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    transition: all 0.3s ease-in-out;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #E02C6D;
+}
+.navbar .nav-item:hover {
+    transform: rotate(7deg);
+}
+/* .banner{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.bannar-content{
+    max-width: 580px;
+}
+.bannar-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+.bannar-subtitle{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    margin: 1rem 0;
+}
+.bannar-btn{
+    background-color: #E02C6D;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    border-radius: 40px;
+    border: none;
+    transition: all 0.9s ease-in-out;
+}
+.bannar-btn i{
+    margin-left: 10px;
+}
+.bannar-btn:hover{
+    background-color: transparent;
+    color: #E02C6D;
+}
+.banner-image{
+    padding: 30px;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-origin:padding-box;
+}
+.banner-image img{
+    width: 100%;
+}
+.brand-logo{
+    padding: 36px 62px;
+    border-top:1px solid #FFFFFF;
+    border-image:linear-gradient(90deg, rgba(192, 204, 218,0.1) ,rgba(192, 204, 218,0.6),rgba(192, 204, 218,0.1))1;
+    border-bottom:1px solid #FFFFFF ;
+    margin:70px auto 100px;
+}
+/*  end of header style */
