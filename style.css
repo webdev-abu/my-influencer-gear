@@ -52,10 +52,12 @@ body{
 .navbar .nav-item:hover {
     transform: rotate(7deg);
 }
-/* .banner{
-    display: flex;
-    justify-content: space-between;
-} */
+ .mobile-nav{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #3A3A3A;
+    display: none;
+ }
 
 .bannar-content{
     max-width: 580px;
