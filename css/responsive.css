@@ -59,6 +59,9 @@
     .featured{
         flex-direction: column-reverse;
     }
+    /* .featured img{
+        width: 90%;
+    } */
     
     .featured .bannar-content{
         width: 90%;
