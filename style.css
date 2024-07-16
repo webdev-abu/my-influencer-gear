@@ -123,6 +123,7 @@ main{
 }
 .collection-content{
     font-family: "Inter", sans-serif;
+    padding: 0 10px ;
     /* background-color: #787885; */
     /* box-shadow: 2px 3px 15px #787885; */
     display: grid;
@@ -197,4 +198,26 @@ main{
 .collection-more:hover{
     background-color: #E02C6D;
     color: #ffffff;
+}
+
+/* featured style */
+.featured{
+    width: 100%;
+    margin: 150px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .featured .bannar-content{
+    width: 100%;
+} */
+.featured .bannar-content .bannar-title{
+    font-size: 2.2rem;
+}
+.featured .bannar-content .bannar-subtitle{
+    font-size: 1rem;
+    color: #6C6C6C;
+}
+.featured .bannar-content .bannar-btn{
+    border-radius: 0%;
 }
