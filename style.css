@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
@@ -12,7 +12,10 @@ body{
 }
 
 /*  shared style */
-
+main{
+    max-width: 1170px;
+    margin: 0 auto;
+}
 /* header style */
 .navbar , .banner, .brand-logo{
     max-width: 1170px;
@@ -53,7 +56,7 @@ body{
     transform: rotate(7deg);
 }
  .mobile-nav{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color: #3A3A3A;
     display: none;
@@ -109,3 +112,89 @@ body{
     margin:70px auto 100px;
 }
 /*  end of header style */
+
+/* collection style */
+.collection-title{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    padding: 30px 0;
+    text-align: center;
+}
+.collection-content{
+    font-family: "Inter", sans-serif;
+    /* background-color: #787885; */
+    /* box-shadow: 2px 3px 15px #787885; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.collection-item{
+    padding: 17px 15px;
+    background-color: #FFFFFF; 
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 35px;
+}
+.collection-item img{
+    width: 100%;
+    height: auto;
+}
+.collection-item-content{
+    display: flex;
+    justify-content:flex-start ;
+    flex-direction: column;
+    gap: 10px;
+}
+.collection-item-title{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3A3A3A;
+}
+.collection-item-price{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #3A3A3A;
+}
+
+.collection-item-rating .rate{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3A3A3A;
+    margin-left:15px ;
+}
+.collection-item-rating span{
+    color: #bebdbe;
+}
+.collection-item-rating .checked{
+    color: #ebcc06;
+}
+.collection-item-subtitle{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+.collection-item-subtitle>span{
+    display: inline-block;
+    margin: 8px 0;
+    color: #04ca4a;
+}
+.collection-more{
+    display: inline-block;
+    float: right;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #E02C6D;
+    margin: 50px 0;
+    padding: 15px 24px;
+    border-radius: 50px;
+    text-align: right;
+    cursor: pointer;
+    transition: all 0.9s ease-in-out;
+}
+.collection-more i{
+    margin-left: 8px;
+}
+.collection-more:hover{
+    background-color: #E02C6D;
+    color: #ffffff;
+}
